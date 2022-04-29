@@ -26,7 +26,7 @@ Demo video link – https://drive.google.com/file/d/18f7rNqQ-rXsMlCDx2rcdy7TZd-b
 * Search function in the drop down.
 
 ## System Architecture
- <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s11.jpg" width=250 ></td>
+ <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s11.png" width=250 ></td>
 
 # Screenshots
 <h3>Main Screens/h3>
