@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Locationselection">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="90dp"
+    tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/avilablelocation"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:text="Select/Search the location from the available list"
+            android:layout_height="wrap_content">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            tools:ignore="MissingConstraints">
+            <AutoCompleteTextView
+                android:id="@+id/selectlocation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ImageView
+            android:id="@+id/mapview"
+            android:layout_width="325dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="center"
+            android:layout_height="325dp"
+            android:src="@drawable/gangaflow"/>
+
+        <LinearLayout
+            android:id="@+id/information"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text=" TEMPERATURE \n (°C) "
+                    android:maxLines="2"
+                    android:gravity="center"
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/min1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MIN"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/tempmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/max1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MAX"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/tempmax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:id="@+id/dissolvedoxygen"
+                    android:gravity="center"
+                    android:text=" Dissolved Oxygen \n (mg/L) &gt;5.0 mg/L "
+
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/min2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MIN"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/dissolvedoxygenmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/max2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MAX"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/dissolvedoxygenmax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pH"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:gravity="center"
+                    android:text=" pH \n (6.5 - 8.5) "
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/min3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MIN"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/pHmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/max3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MAX"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/pHmax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Conductivity"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:gravity="center"
+                    android:text=" Conductivity \n (umho/Cm) "
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/min4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MIN"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/Conductivitymin"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/max4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MAX"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/Conductivitymax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Biochemoxygen"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:gravity="center"
+                    android:text="Bio-Chemical Oxygen\n Demand(mg/L) \n &lt;3.0 mg/L "
+
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/min5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MIN"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/Biochemoxygenmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/max5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MAX"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/Biochemoxygenmax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Nitrate"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:gravity="center"
+                    android:text=" Nitrate \n (mg/L) "
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/min6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MIN"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/Nitratemin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/max6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MAX"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/Nitratemax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Facealcoliform"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:gravity="center"
+                    android:text=" Faceal Coliform \n (MPN/100mL) \n &lt;2500 MPN/ 100mL "
+
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/min7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MIN"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/Facealcoliformmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/max7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MAX"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/Facealcoliformmax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/totalcoliform"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:gravity="center"
+                    android:text=" Total Coliform \n (MPN/100mL) "
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/min8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MIN"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/totalcoliformmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="10dp">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/max8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="MAX"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp">
+
+                    </Space>
+                    <TextView
+                        android:id="@+id/totalcoliformmax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="7.560"
+
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/avilableusage"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:gravity="center"
+
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:text="Select/Search the location from the available list"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/avilablesol"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:text="Select/Search the location from the available list"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

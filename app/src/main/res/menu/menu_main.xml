@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/graphdata"
+        android:title="GraphInput"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_show_chart_24"/>
+
+    <item
+        android:id="@+id/addwaterdata"
+        android:title="EditUserInput"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_edit_24"/>
+
+
+    <item
+        android:id="@+id/language"
+        android:title="EditUserInput"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_noun_translate_hindi_to_english_2532298"/>
+</menu>
