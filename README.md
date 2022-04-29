@@ -21,32 +21,28 @@
 
 
 # Screenshots
-<h3>SIGN IN & DATABASE</h3>
+<h3>Main Screens/h3>
 <table>
 <tr>
-<td><img src="https://github.com/Pratyaksh777/HostelManagementSystem/blob/master/Screenshots/Screenshot%20(738).png" width=250 ></td>
-  <td><img src="https://github.com/Pratyaksh777/HostelManagementSystem/blob/master/Screenshots/Screenshot%20(745).png" width=250 ></td>
+<td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s6.jpg" width=250 ></td>
+  <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s7.jpg" width=250 ></td>
+  <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s8.jpg" width=250 ></td>
+  <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s9.jpg" width=250 ></td>
   </tr>
   </table>
-  <h3>STUDENT LOGIN</h3>
+  <h3>Screens with data</h3>
 <table>
 <tr>
-<td><img src="https://github.com/Pratyaksh777/HostelManagementSystem/blob/master/Screenshots/Screenshot%20(739).png" width=200></td>
-<td><img src="https://github.com/Pratyaksh777/HostelManagementSystem/blob/master/Screenshots/Screenshot%20(740).png" width=200></td>
-<td><img src="https://github.com/Pratyaksh777/HostelManagementSystem/blob/master/Screenshots/Screenshot%20(741).png" width=200></td>
-<td><img src="https://github.com/Pratyaksh777/HostelManagementSystem/blob/master/Screenshots/Screenshot%20(742).png" width=200></td>
-<td><img src="https://github.com/Pratyaksh777/HostelManagementSystem/blob/master/Screenshots/Screenshot%20(744).png" width=200></td>
+  <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s1.jpg" width=250 ></td>
+  <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s3.jpg" width=250 ></td>
+  <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s5.jpg" width=250 ></td>
   </tr>
   </table>
-   <h3>WARDEN LOGIN</h3>
+   <h3>Graph View</h3>
   <table>
   <tr>
     
-<td><img src="https://github.com/Pratyaksh777/HostelManagementSystem/blob/master/Screenshots/Screenshot%20(749).png" width=200></td>
-<td><img src="https://github.com/Pratyaksh777/HostelManagementSystem/blob/master/Screenshots/Screenshot%20(743).png" width=200></td>
-<td><img src="https://github.com/Pratyaksh777/HostelManagementSystem/blob/master/Screenshots/Screenshot%20(745).png" width=200></td>
-<td><img src="https://github.com/Pratyaksh777/HostelManagementSystem/blob/master/Screenshots/Screenshot%20(746).png" width=200></td>
-<td><img src="https://github.com/Pratyaksh777/HostelManagementSystem/blob/master/Screenshots/Screenshot%20(747).png" width=200></td>
-<td><img src="https://github.com/Pratyaksh777/HostelManagementSystem/blob/master/Screenshots/Screenshot%20(748).png" width=200></td>
+<td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s2.jpg" width=250 ></td>
+  <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s4.jpg" width=250 ></td>
   </tr>
   </table>
