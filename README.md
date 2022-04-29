@@ -35,7 +35,7 @@
 <tr>
   <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s1.jpg" width=250 ></td>
   <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s3.jpg" width=250 ></td>
-  <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s4.jpg" width=250 ></td>
+  <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s5.jpg" width=250 ></td>
   </tr>
   </table>
    <h3>Graph View</h3>
@@ -43,6 +43,6 @@
   <tr>
     
 <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s2.jpg" width=250 ></td>
-  <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s5.jpg" width=250 ></td>
+  <td><img src="https://github.com/Pratyaksh777/WQII/blob/master/Final%20submission%20capstone/s4.jpg" width=250 ></td>
   </tr>
   </table>
