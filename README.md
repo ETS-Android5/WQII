@@ -1,4 +1,4 @@
-# WQII
+# WQII(Water Quality Index India)
 <h3>An Android app that tells whether the water we are using is usable or not if not how can we make it usable or how can we use it for other purposes by the use of data of the water without having to do this procedure manually. It is suitable for English as well as Hindi users which has 95 predefined locations where Ganga flows which have search functionality and also has the manual option for entering the water quality for any water body, graphical view for interactiveness of the user.
   
 Link to the apk – https://drive.google.com/file/d/18z4n39bch_BJig7d3sqxuBfY80KISo8I/view?usp=sharing
